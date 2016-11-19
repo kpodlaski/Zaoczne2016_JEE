@@ -5,6 +5,10 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import jdbc.model.Jednostka;
 
 public class ConnectionTest {
 
@@ -17,12 +21,14 @@ public class ConnectionTest {
 		Statement st  = con.createStatement();
 		st.execute("SELECT id,nazwa FROM Jednostka");
 		ResultSet rs = st.getResultSet();
+		List<Jednostka> jednostki = new ArrayList<>();
 		while(rs.next()){
-			int id = rs.getInt(1);
-			String name = rs.getString("nazwa");
-			System.out.println(id + " :: "+name);
+			jednostki.add(Jednostka.getFormResultSet(rs));
 		}
-		
+		rs.close();
+		st.close();
+		con.close();
+		System.out.println(jednostki);
 	}
 
 }
