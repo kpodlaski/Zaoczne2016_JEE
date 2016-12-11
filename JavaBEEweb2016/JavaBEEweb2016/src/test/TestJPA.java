@@ -45,7 +45,7 @@ public class TestJPA {
 		System.out.println(j.getId());		
 		jednostki = em.createNamedQuery("Jednostka.findAll").getResultList();
 		System.out.println(jednostki);
-		System.out.println("======================");
+		System.out.println("=====================");
 		em.close();
 		emf.close();
 	}
