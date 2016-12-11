@@ -8,5 +8,6 @@
 </head>
 <body>
 HELLO TO JEST WIDOK
+${info}
 </body>
 </html>
