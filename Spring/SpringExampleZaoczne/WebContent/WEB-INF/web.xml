@@ -18,5 +18,8 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
     
-    
+    <servlet-mapping>
+    	<servlet-name>spring</servlet-name>
+    	<url-pattern>/mvc/*</url-pattern>
+    </servlet-mapping>
 </web-app>

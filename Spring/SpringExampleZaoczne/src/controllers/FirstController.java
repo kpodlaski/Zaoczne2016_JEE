@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class FirstController {
 	
-	@RequestMapping("/hello.html")
+	@RequestMapping("/hello")
 	public ModelAndView firstAddres(){
 		ModelAndView mv= new ModelAndView("Widok");
 		
