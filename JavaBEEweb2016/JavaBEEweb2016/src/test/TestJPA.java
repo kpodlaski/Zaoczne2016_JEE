@@ -37,7 +37,8 @@ public class TestJPA {
 		}
 		Jednostka j2 = new Jednostka();
 		j2.setNazwa("Magazyn");
-		System.out.println(j.getId());		
+		System.out.println(j.getId());
+		/*
 		em.getTransaction().begin();
 		em.persist(j2);
 		//j2.setOsoby(j.getOsoby());
@@ -46,6 +47,7 @@ public class TestJPA {
 		jednostki = em.createNamedQuery("Jednostka.findAll").getResultList();
 		System.out.println(jednostki);
 		System.out.println("=====================");
+		*/
 		em.close();
 		emf.close();
 	}
