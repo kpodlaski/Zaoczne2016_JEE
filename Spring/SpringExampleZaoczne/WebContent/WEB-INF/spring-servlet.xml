@@ -33,6 +33,9 @@
     <property name="defaultViews">
         <list>
             <bean class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"/>
+            <bean class="org.springframework.web.servlet.view.xml.MappingJackson2XmlView"/>
+            <!-- <bean class="org.springframework.web.servlet.view.xml.MarshallingView"/>
+             -->
         </list>
     </property>
 </bean>
