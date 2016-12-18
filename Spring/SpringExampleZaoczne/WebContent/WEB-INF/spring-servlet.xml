@@ -20,6 +20,8 @@
 	</bean>
 	 -->
 	 
+	 <bean id="bazaOsob" class="model.BazaOsob"></bean>
+	 
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
     <property name="viewResolvers">
         <list>

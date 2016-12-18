@@ -2,12 +2,18 @@ package model;
 
 
 public class Person {
+	int id;
 	String imie;
 	String nazwisko;
 	
 	
 	public Person(){}
 	public Person(String imie, String nazwisko){
+		this.imie=imie;
+		this.nazwisko = nazwisko;
+	}
+	public Person(int id, String imie, String nazwisko){
+		this.id=id;
 		this.imie=imie;
 		this.nazwisko = nazwisko;
 	}
@@ -23,6 +29,12 @@ public class Person {
 	}
 	public void setNazwisko(String nazwisko) {
 		this.nazwisko = nazwisko;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	
 
